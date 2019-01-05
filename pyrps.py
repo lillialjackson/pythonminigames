@@ -1,5 +1,7 @@
 import random
 # or from random import randint
+
+
 def rps():
     print('Rock...')
     print('Paper...')
@@ -13,7 +15,7 @@ def rps():
     while human_score < 2 and computer_score < 2:
         midgame_scores = f"The score is humans: {human_score}, computers: {computer_score}"
         player = input('Choose silly human!').lower()
-        rand_num = random.randint(0,2)
+        rand_num = random.randint(0, 2)
         human_victory_msg = 'You Won! Humans will remain free... for now...'
         comp_victory_msg = 'I Won! MUAH. HA. HA. Bring me a byte to eat slave!'
         count += 1

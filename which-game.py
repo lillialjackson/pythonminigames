@@ -3,7 +3,7 @@ import pyguessinggame
 import sys
 
 
-def game_selection (selection):
+def game_selection(selection):
     game = selection
     if game == 'rps':
             print(computer_bet)
@@ -12,7 +12,8 @@ def game_selection (selection):
             print(computer_bet)
             pyguessinggame.guess_game()
     else:
-        new_game_selection = input("C'mon you said you said you would play! Now pick! (rps/gg) ")
+        new_game_selection = input(
+            "C'mon you said you said you would play! Now pick! (rps/gg) ")
         game_selection(new_game_selection)
 
 

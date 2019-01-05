@@ -1,10 +1,11 @@
 import random
 import sys
 
-def guess_game ():
+
+def guess_game():
     rand_low = 1
     rand_high = 10
-    rand_num = random.randint(rand_low,rand_high)
+    rand_num = random.randint(rand_low, rand_high)
     win_count = 0
 
     while True:
@@ -33,6 +34,6 @@ def guess_game ():
                     rand_high = 75
                 else:
                     rand_high = 100
-                rand_num = random.randint(rand_low,rand_high)
+                rand_num = random.randint(rand_low, rand_high)
             else:
                     sys.exit("I know we'll be seeing each other again!")
